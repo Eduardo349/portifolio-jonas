@@ -48,7 +48,14 @@ npm run dev
 - GitHub: https://github.com/Eduardo349
 - Telefone: (51) 99423-8039
 
+
+## 🔗 Live Demo
+
+[Visualizar Projeto](https://portfolio-jonas.vercel.app)
+
+
 ---
+
 
 ## 💡 Autor
 
