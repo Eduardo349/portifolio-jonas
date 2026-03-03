@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header h1 {
+  color: rgba(0, 132, 255, 0.93);
+}
+
+.header h1:hover {
+  color: #12f8d9;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav li {
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgba(0, 119, 255, 0.93);
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #00d8ff;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav {
+    margin-top: 15px;
+  }
+}

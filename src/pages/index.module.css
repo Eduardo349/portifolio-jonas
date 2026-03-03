@@ -1,0 +1,30 @@
+.hero {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.right {
+  flex: 1;
+  background-image: url("/suaFoto.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .right {
+    height: 300px;
+  }
+}

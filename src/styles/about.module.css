@@ -1,0 +1,143 @@
+.section {
+    padding: 120px 10%;
+    text-align: center;
+    background-color: #0f0f0f;
+}
+
+.section h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.section p {
+    font-size: 1.1em;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    color: #b3b3b3;
+}
+
+.section h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+
+/* animação base */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease forwards;
+}
+
+/* delay opcional */
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    animation-delay: 0.9s;
+}
+
+.delay-4 {
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.skill {
+  text-align: center;
+  color: white;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 
+    0 0 10px rgba(0, 247, 255, 0.5),
+    0 0 30px rgba(0, 247, 255, 0.3),
+    inset 0 0 20px rgba(0, 247, 255, 0.2);
+}
+
+.circle:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 
+    0 0 20px rgba(0, 247, 255, 0.8),
+    0 0 50px rgba(0, 247, 255, 0.6),
+    inset 0 0 25px rgba(0, 247, 255, 0.4);
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #0f2027, #0a0f1c 60%);
+}
+
+/* fundo interno */
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: #0f0f0f;
+  border-radius: 50%;
+}
+
+/* porcentagens */
+.html {
+  background: conic-gradient(#00f7ff 90%, #1a1a1a 0%);
+}
+
+.css {
+  background: conic-gradient(#00f7ff 85%, #1a1a1a 0%);
+}
+
+.js {
+  background: conic-gradient(#00f7ff 75%, #1a1a1a 0%);
+}
+
+.react {
+  background: conic-gradient(#00f7ff 70%, #1a1a1a 0%);
+}
+
+.github {
+  background: conic-gradient(#00f7ff 80%, #1a1a1a 0%);
+}
+
+.vercel {
+  background: conic-gradient(#00f7ff 75%, #1a1a1a 0%);
+}

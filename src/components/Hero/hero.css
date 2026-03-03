@@ -1,0 +1,135 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background: linear-gradient(135deg, #0f172a, #0b1120);
+  color: white;
+}
+
+/* LADO ESQUERDO */
+.hero-left {
+  max-width: 500px;
+}
+
+.hello {
+  color: #00f5c4;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-left h1 {
+  font-size: 5.5rem;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #00f5c4;
+}
+
+.hero-left h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* BOTÕES */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary {
+  background: #00f5c4;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary:hover {
+  background: #00f5c4;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #00f5c4;
+  padding: 12px 25px;
+  color: #00f5c4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary:hover {
+  background: #00f5c4;
+  color: white;
+}
+
+/* LADO DIREITO */
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00f5c4, #0f172a);
+  filter: blur(40px);
+  opacity: 0.6;
+  z-index: 1;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.image-wrapper img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 5%;
+  }
+
+  .hero-right {
+    margin-top: 40px;
+  }
+}
